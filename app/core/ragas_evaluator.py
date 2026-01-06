@@ -5,7 +5,7 @@ import time
 from typing import Any
 
 from datasets import Dataset
-from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from ragas import evaluate
 from ragas.metrics import answer_relevancy, faithfulness
 
