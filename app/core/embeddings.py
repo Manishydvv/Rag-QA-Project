@@ -20,7 +20,7 @@ def get_embeddings() -> OpenAIEmbeddings:
     """
     settings = get_settings()
     logger.info(f"Initializing embeddings model: {settings.embedding_model}")
-    
+
     embeddings = GoogleGenerativeAIEmbeddings(
         model=settings.embedding_model,
         google_api_key=settings.google_api_key,

@@ -31,9 +31,7 @@ def get_qdrant_client() -> QdrantClient:
     logger.info(f"Connecting to Qdrant at: {settings.qdrant_url}")
 
     client = QdrantClient(
-        url=settings.qdrant_url,
-        api_key=settings.qdrant_api_key,
-        timeout=60.0
+        url=settings.qdrant_url, api_key=settings.qdrant_api_key, timeout=60.0
     )
 
     logger.info("Qdrant client connected successfully")
@@ -63,7 +61,9 @@ class VectorStoreService:
             embedding=self.embeddings,
         )
 
-        logger.info(f"VectorStoreService initialized for collection: {self.collection_name}")
+        logger.info(
+            f"VectorStoreService initialized for collection: {self.collection_name}"
+        )
 
     def _ensure_collection(self) -> None:
         """Ensure the collection exists, create if not."""

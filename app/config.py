@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     )
 
     # OpenAI Configuration
-    #openai_api_key: str = None
+    # openai_api_key: str = None
 
     # Google Configuration
     google_api_key: str
