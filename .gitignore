@@ -1,0 +1,18 @@
+# Virtual Environment (Matches your .venv folder)
+.venv/
+venv/
+env/
+
+# Environment Variables & Secrets (CRITICAL)
+.env
+
+# Python Bytecode (Generated automatically)
+__pycache__/
+*.pyc
+
+
+trust-policy.json
+
+# IDE Settings (Optional, keeps repo clean)
+.vscode/
+.idea/
