@@ -2,7 +2,7 @@
 
 from functools import lru_cache
 
-from langchain_openai import OpenAIEmbeddings
+#from langchain_openai import OpenAIEmbeddings
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 from app.config import get_settings
@@ -12,7 +12,7 @@ logger = get_logger(__name__)
 
 
 @lru_cache
-def get_embeddings() -> OpenAIEmbeddings:
+def get_embeddings() -> GoogleGenerativeAIEmbeddings:
     """Get cached OpenAI embeddings instance.
 
     Returns:
